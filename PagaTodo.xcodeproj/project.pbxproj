@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D577735FD12067EFAC04FF3 /* Pods_PagaTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2714E046F3868B77CF7976 /* Pods_PagaTodo.framework */; };
+		AE371C7C2A3436EA0088DA63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE371C7B2A3436EA0088DA63 /* AppDelegate.swift */; };
+		AE371C7E2A3436EA0088DA63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE371C7D2A3436EA0088DA63 /* SceneDelegate.swift */; };
+		AE371C832A3436EA0088DA63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE371C812A3436EA0088DA63 /* Main.storyboard */; };
+		AE371C852A3436EC0088DA63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE371C842A3436EC0088DA63 /* Assets.xcassets */; };
+		AE371C882A3436EC0088DA63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE371C862A3436EC0088DA63 /* LaunchScreen.storyboard */; };
+		AE371C9F2A343A640088DA63 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE371C942A343A640088DA63 /* HomePresenter.swift */; };
+		AE371CA02A343A640088DA63 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE371C962A343A640088DA63 /* HomeViewController.swift */; };
+		AE371CA12A343A640088DA63 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE371C982A343A640088DA63 /* HomeRouter.swift */; };
+		AE371CA22A343A640088DA63 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE371C9A2A343A640088DA63 /* HomeModule.swift */; };
+		AE371CA32A343A640088DA63 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE371C9C2A343A640088DA63 /* HomeModel.swift */; };
+		AE371CA42A343A640088DA63 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE371C9E2A343A640088DA63 /* HomeInteractor.swift */; };
+		AE371CA62A34EE420088DA63 /* BankViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE371CA52A34EE420088DA63 /* BankViewCell.swift */; };
+		AE371CA92A34FC3E0088DA63 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE371CA82A34FC3E0088DA63 /* HomeProtocols.swift */; };
+		AECBEFE02A352C050055628D /* Banks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECBEFDF2A352C050055628D /* Banks.swift */; };
+		AECBEFE22A352C6E0055628D /* SQLiteDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECBEFE12A352C6E0055628D /* SQLiteDataBase.swift */; };
+		AECBEFE42A352E520055628D /* SQLiteCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECBEFE32A352E520055628D /* SQLiteCommands.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		47F12DF6971E092EF14EC3B6 /* Pods-PagaTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PagaTodo.debug.xcconfig"; path = "Target Support Files/Pods-PagaTodo/Pods-PagaTodo.debug.xcconfig"; sourceTree = "<group>"; };
+		75C3EEEFC8A29573FCA715AD /* Pods-PagaTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PagaTodo.release.xcconfig"; path = "Target Support Files/Pods-PagaTodo/Pods-PagaTodo.release.xcconfig"; sourceTree = "<group>"; };
+		AE371C782A3436EA0088DA63 /* PagaTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagaTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE371C7B2A3436EA0088DA63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE371C7D2A3436EA0088DA63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AE371C822A3436EA0088DA63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE371C842A3436EC0088DA63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE371C872A3436EC0088DA63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE371C892A3436EC0088DA63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE371C942A343A640088DA63 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		AE371C962A343A640088DA63 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AE371C982A343A640088DA63 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		AE371C9A2A343A640088DA63 /* HomeModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
+		AE371C9C2A343A640088DA63 /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		AE371C9E2A343A640088DA63 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		AE371CA52A34EE420088DA63 /* BankViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankViewCell.swift; sourceTree = "<group>"; };
+		AE371CA82A34FC3E0088DA63 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		AECBEFDF2A352C050055628D /* Banks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banks.swift; sourceTree = "<group>"; };
+		AECBEFE12A352C6E0055628D /* SQLiteDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDataBase.swift; sourceTree = "<group>"; };
+		AECBEFE32A352E520055628D /* SQLiteCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteCommands.swift; sourceTree = "<group>"; };
+		CA2714E046F3868B77CF7976 /* Pods_PagaTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PagaTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE371C752A3436EA0088DA63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D577735FD12067EFAC04FF3 /* Pods_PagaTodo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8721A8D272A595E536B3A93D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47F12DF6971E092EF14EC3B6 /* Pods-PagaTodo.debug.xcconfig */,
+				75C3EEEFC8A29573FCA715AD /* Pods-PagaTodo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8D82B9811C0458D28755C66F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA2714E046F3868B77CF7976 /* Pods_PagaTodo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE371C6F2A3436EA0088DA63 = {
+			isa = PBXGroup;
+			children = (
+				AE371C7A2A3436EA0088DA63 /* PagaTodo */,
+				AE371C792A3436EA0088DA63 /* Products */,
+				8721A8D272A595E536B3A93D /* Pods */,
+				8D82B9811C0458D28755C66F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE371C792A3436EA0088DA63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE371C782A3436EA0088DA63 /* PagaTodo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE371C7A2A3436EA0088DA63 /* PagaTodo */ = {
+			isa = PBXGroup;
+			children = (
+				AE371C7B2A3436EA0088DA63 /* AppDelegate.swift */,
+				AE371C7D2A3436EA0088DA63 /* SceneDelegate.swift */,
+				AECBEFDC2A3519FC0055628D /* DataBase */,
+				AE371C912A343A640088DA63 /* HomePagaTodo */,
+				AE371C812A3436EA0088DA63 /* Main.storyboard */,
+				AE371C842A3436EC0088DA63 /* Assets.xcassets */,
+				AE371C862A3436EC0088DA63 /* LaunchScreen.storyboard */,
+				AE371C892A3436EC0088DA63 /* Info.plist */,
+			);
+			path = PagaTodo;
+			sourceTree = "<group>";
+		};
+		AE371C912A343A640088DA63 /* HomePagaTodo */ = {
+			isa = PBXGroup;
+			children = (
+				AE371CA72A34FC130088DA63 /* Protocols */,
+				AE371C922A343A640088DA63 /* UI */,
+				AE371C992A343A640088DA63 /* Module */,
+				AE371C9B2A343A640088DA63 /* EntityModel */,
+				AE371C9D2A343A640088DA63 /* Interactor */,
+			);
+			path = HomePagaTodo;
+			sourceTree = "<group>";
+		};
+		AE371C922A343A640088DA63 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AE371C932A343A640088DA63 /* Presenter */,
+				AE371C952A343A640088DA63 /* ViewController */,
+				AE371C972A343A640088DA63 /* Router */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AE371C932A343A640088DA63 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AE371C942A343A640088DA63 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AE371C952A343A640088DA63 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AE371C962A343A640088DA63 /* HomeViewController.swift */,
+				AE371CA52A34EE420088DA63 /* BankViewCell.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AE371C972A343A640088DA63 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AE371C982A343A640088DA63 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AE371C992A343A640088DA63 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				AE371C9A2A343A640088DA63 /* HomeModule.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		AE371C9B2A343A640088DA63 /* EntityModel */ = {
+			isa = PBXGroup;
+			children = (
+				AE371C9C2A343A640088DA63 /* HomeModel.swift */,
+			);
+			path = EntityModel;
+			sourceTree = "<group>";
+		};
+		AE371C9D2A343A640088DA63 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AE371C9E2A343A640088DA63 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		AE371CA72A34FC130088DA63 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AE371CA82A34FC3E0088DA63 /* HomeProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AECBEFDC2A3519FC0055628D /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				AECBEFDF2A352C050055628D /* Banks.swift */,
+				AECBEFE12A352C6E0055628D /* SQLiteDataBase.swift */,
+				AECBEFE32A352E520055628D /* SQLiteCommands.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE371C772A3436EA0088DA63 /* PagaTodo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE371C8C2A3436EC0088DA63 /* Build configuration list for PBXNativeTarget "PagaTodo" */;
+			buildPhases = (
+				D6883A65D8EC13D8283391A9 /* [CP] Check Pods Manifest.lock */,
+				AE371C742A3436EA0088DA63 /* Sources */,
+				AE371C752A3436EA0088DA63 /* Frameworks */,
+				AE371C762A3436EA0088DA63 /* Resources */,
+				15555DD54D128676FA36D119 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PagaTodo;
+			productName = PagaTodo;
+			productReference = AE371C782A3436EA0088DA63 /* PagaTodo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE371C702A3436EA0088DA63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					AE371C772A3436EA0088DA63 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AE371C732A3436EA0088DA63 /* Build configuration list for PBXProject "PagaTodo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE371C6F2A3436EA0088DA63;
+			productRefGroup = AE371C792A3436EA0088DA63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE371C772A3436EA0088DA63 /* PagaTodo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE371C762A3436EA0088DA63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE371C882A3436EC0088DA63 /* LaunchScreen.storyboard in Resources */,
+				AE371C852A3436EC0088DA63 /* Assets.xcassets in Resources */,
+				AE371C832A3436EA0088DA63 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15555DD54D128676FA36D119 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PagaTodo/Pods-PagaTodo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PagaTodo/Pods-PagaTodo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PagaTodo/Pods-PagaTodo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6883A65D8EC13D8283391A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PagaTodo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE371C742A3436EA0088DA63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE371CA62A34EE420088DA63 /* BankViewCell.swift in Sources */,
+				AE371CA22A343A640088DA63 /* HomeModule.swift in Sources */,
+				AE371C9F2A343A640088DA63 /* HomePresenter.swift in Sources */,
+				AE371C7C2A3436EA0088DA63 /* AppDelegate.swift in Sources */,
+				AECBEFE02A352C050055628D /* Banks.swift in Sources */,
+				AE371CA42A343A640088DA63 /* HomeInteractor.swift in Sources */,
+				AE371CA32A343A640088DA63 /* HomeModel.swift in Sources */,
+				AE371CA92A34FC3E0088DA63 /* HomeProtocols.swift in Sources */,
+				AE371C7E2A3436EA0088DA63 /* SceneDelegate.swift in Sources */,
+				AE371CA02A343A640088DA63 /* HomeViewController.swift in Sources */,
+				AECBEFE22A352C6E0055628D /* SQLiteDataBase.swift in Sources */,
+				AE371CA12A343A640088DA63 /* HomeRouter.swift in Sources */,
+				AECBEFE42A352E520055628D /* SQLiteCommands.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE371C812A3436EA0088DA63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE371C822A3436EA0088DA63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE371C862A3436EC0088DA63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE371C872A3436EC0088DA63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE371C8A2A3436EC0088DA63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE371C8B2A3436EC0088DA63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE371C8D2A3436EC0088DA63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F12DF6971E092EF14EC3B6 /* Pods-PagaTodo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PagaTodo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PagaTodo.PagaTodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE371C8E2A3436EC0088DA63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75C3EEEFC8A29573FCA715AD /* Pods-PagaTodo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PagaTodo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PagaTodo.PagaTodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE371C732A3436EA0088DA63 /* Build configuration list for PBXProject "PagaTodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE371C8A2A3436EC0088DA63 /* Debug */,
+				AE371C8B2A3436EC0088DA63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE371C8C2A3436EC0088DA63 /* Build configuration list for PBXNativeTarget "PagaTodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE371C8D2A3436EC0088DA63 /* Debug */,
+				AE371C8E2A3436EC0088DA63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE371C702A3436EA0088DA63 /* Project object */;
+}
