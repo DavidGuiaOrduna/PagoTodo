@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  PagaTodo
 //
-//  Created by David Fernando Guia Orduña on 09/06/23.
+//  Created by David Fernando Guia Orduña on 10/06/23.
 //
 
 import UIKit
