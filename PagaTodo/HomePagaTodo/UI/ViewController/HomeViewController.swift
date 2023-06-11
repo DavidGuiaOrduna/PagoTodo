@@ -29,21 +29,21 @@ class HomeViewController: UIViewController, HomeViewProtocol {
         super.viewDidLoad()
         self.presenter?.viewDidLoad()
         view.backgroundColor = UIColor.backGroundView
-        setupTabelView()
-        bankTable.reloadData()
-    }
-    
-    func setupTabelView() {
-        bankTable.dataSource = self
-        bankTable.delegate = self
     }
 
     func getDataBack(response: [ResultModel]) {
         bankInfo = response
+        setupTabelView()
     }
     
     func getDataBack(listBank: [Banks]) {
         listBanks = listBank
+        setupTabelView()
+    }
+    func setupTabelView() {
+        bankTable.dataSource = self
+        bankTable.delegate = self
+        bankTable.reloadData()
     }
 }
 
@@ -57,19 +57,20 @@ extension HomeViewController: UITableViewDelegate {
 extension HomeViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if listBanks?.count != 0 {
+        if listBanks?.count != 0 && listBanks != nil {
             return listBanks?.count ?? 0
-        } else {
+        } else if bankInfo?.count != 0 {
             return bankInfo?.count ?? 0
         }
+        return 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! BankViewCell
-        if listBanks?.count != 0 {
+        if listBanks?.count != 0 && listBanks != nil {
             let list = listBanks?[indexPath.row]
             cell.setup(listBanks: list)
-        } else {
+        } else if bankInfo?.count != 0{
             let bankInfo = bankInfo?[indexPath.row]
             cell.setupCell(bankInfo: bankInfo)
         }

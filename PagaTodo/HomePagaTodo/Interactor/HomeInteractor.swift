@@ -22,17 +22,15 @@ class HomeInteractor: HomeInteractorProtocol {
         let total = listBanksArray?.count ?? 0
         if total == 0 {
             createTable()
-            AF.request(self.baseUrl
-                       , method: .get, parameters: nil, encoding: URLEncoding.default,
-                       headers: nil, interceptor: nil).response { (responseData) in
+            AF.request(self.baseUrl, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil).response { (responseData) in
                 guard let data = responseData.data else {
                     self.callBack?(nil, false, "")
                     return }
                 do {
                     let dataInfo = try JSONDecoder().decode([ResultModel].self, from: data)
                     self.callBack?(dataInfo, true,"")
-                    self.getBankDatabase(dataInfo: dataInfo)
                     self.presenter?.didGetResponseModel(response: dataInfo)
+                    self.getBankDatabase(dataInfo: dataInfo)
                 } catch {
                     self.callBack?(nil, false, error.localizedDescription)
                     print("error = \(error)")
