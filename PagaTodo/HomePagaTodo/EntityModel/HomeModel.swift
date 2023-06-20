@@ -21,3 +21,8 @@ struct ResultModel: Codable {
         case url = "url"
     }
 }
+
+struct DetailBankModel {
+    var bankName: String?
+    var url: String?
+}

@@ -9,7 +9,7 @@ import UIKit
 import Foundation
 
 protocol HomeRouterProtocol: AnyObject {
-    
+    func showDetail(detail: DetailBankModel)
 }
 
 
@@ -17,6 +17,7 @@ protocol HomePresenterProtocol: AnyObject {
     func viewDidLoad()
     func didGetResponseModel(response: [ResultModel])
     func didGetResponseModel(listBanks: [Banks])
+    func showDetail(detail: DetailBankModel)
 }
 
 protocol HomeInteractorProtocol: AnyObject {

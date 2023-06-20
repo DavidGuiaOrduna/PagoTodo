@@ -33,5 +33,9 @@ class HomePresenter: HomePresenterProtocol {
     func didGetResponseModel(listBanks: [Banks]) {
         viewController?.getDataBack(listBank: listBanks)
     }
+    
+    func showDetail(detail: DetailBankModel) {
+        router?.showDetail(detail: detail)
+    }
 }
 

@@ -14,4 +14,12 @@ class HomeRouter: HomeRouterProtocol {
     init(viewController: UIViewController) {
         self.viewController = viewController
     }
+    
+    func showDetail(detail: DetailBankModel) {
+        
+        let deatil = DetailBankRouter.createModule(detail: detail)
+        let vc = UINavigationController(rootViewController: deatil)
+        vc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        self.viewController.present(vc, animated: true)
+    }
 }

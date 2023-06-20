@@ -21,6 +21,12 @@
 		AE371CA42A343A640088DA63 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE371C9E2A343A640088DA63 /* HomeInteractor.swift */; };
 		AE371CA62A34EE420088DA63 /* BankViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE371CA52A34EE420088DA63 /* BankViewCell.swift */; };
 		AE371CA92A34FC3E0088DA63 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE371CA82A34FC3E0088DA63 /* HomeProtocols.swift */; };
+		AEBB70D12A4118C5000567BB /* DetailBankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEBB70CD2A4118C4000567BB /* DetailBankViewController.xib */; };
+		AEBB70D22A4118C5000567BB /* DetailBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB70CE2A4118C4000567BB /* DetailBankViewController.swift */; };
+		AEBB70D42A4118E9000567BB /* DetailBankPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB70D32A4118E9000567BB /* DetailBankPresenter.swift */; };
+		AEBB70D62A411911000567BB /* DetailBankRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB70D52A411911000567BB /* DetailBankRouter.swift */; };
+		AEBB70D92A411963000567BB /* DetailBankProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB70D82A411963000567BB /* DetailBankProtocols.swift */; };
+		AEBB70DC2A413103000567BB /* DetailBankInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB70DB2A413103000567BB /* DetailBankInteractor.swift */; };
 		AECBEFE02A352C050055628D /* Banks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECBEFDF2A352C050055628D /* Banks.swift */; };
 		AECBEFE22A352C6E0055628D /* SQLiteDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECBEFE12A352C6E0055628D /* SQLiteDataBase.swift */; };
 		AECBEFE42A352E520055628D /* SQLiteCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECBEFE32A352E520055628D /* SQLiteCommands.swift */; };
@@ -44,6 +50,12 @@
 		AE371C9E2A343A640088DA63 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		AE371CA52A34EE420088DA63 /* BankViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankViewCell.swift; sourceTree = "<group>"; };
 		AE371CA82A34FC3E0088DA63 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		AEBB70CD2A4118C4000567BB /* DetailBankViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailBankViewController.xib; sourceTree = "<group>"; };
+		AEBB70CE2A4118C4000567BB /* DetailBankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailBankViewController.swift; sourceTree = "<group>"; };
+		AEBB70D32A4118E9000567BB /* DetailBankPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBankPresenter.swift; sourceTree = "<group>"; };
+		AEBB70D52A411911000567BB /* DetailBankRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBankRouter.swift; sourceTree = "<group>"; };
+		AEBB70D82A411963000567BB /* DetailBankProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBankProtocols.swift; sourceTree = "<group>"; };
+		AEBB70DB2A413103000567BB /* DetailBankInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBankInteractor.swift; sourceTree = "<group>"; };
 		AECBEFDF2A352C050055628D /* Banks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banks.swift; sourceTree = "<group>"; };
 		AECBEFE12A352C6E0055628D /* SQLiteDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDataBase.swift; sourceTree = "<group>"; };
 		AECBEFE32A352E520055628D /* SQLiteCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteCommands.swift; sourceTree = "<group>"; };
@@ -104,6 +116,7 @@
 				AE371C7D2A3436EA0088DA63 /* SceneDelegate.swift */,
 				AECBEFDC2A3519FC0055628D /* DataBase */,
 				AE371C912A343A640088DA63 /* HomePagaTodo */,
+				AEBB70C92A4118C4000567BB /* DetailBankView */,
 				AE371C812A3436EA0088DA63 /* Main.storyboard */,
 				AE371C842A3436EC0088DA63 /* Assets.xcassets */,
 				AE371C862A3436EC0088DA63 /* LaunchScreen.storyboard */,
@@ -191,6 +204,68 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		AEBB70C92A4118C4000567BB /* DetailBankView */ = {
+			isa = PBXGroup;
+			children = (
+				AEBB70D72A41194C000567BB /* Protocols */,
+				AEBB70CA2A4118C4000567BB /* UI */,
+			);
+			path = DetailBankView;
+			sourceTree = "<group>";
+		};
+		AEBB70CA2A4118C4000567BB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AEBB70CC2A4118C4000567BB /* ViewController */,
+				AEBB70CB2A4118C4000567BB /* Presenter */,
+				AEBB70CF2A4118C4000567BB /* Router */,
+				AEBB70DA2A4130E1000567BB /* Interactor */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AEBB70CB2A4118C4000567BB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AEBB70D32A4118E9000567BB /* DetailBankPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AEBB70CC2A4118C4000567BB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AEBB70CD2A4118C4000567BB /* DetailBankViewController.xib */,
+				AEBB70CE2A4118C4000567BB /* DetailBankViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AEBB70CF2A4118C4000567BB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AEBB70D52A411911000567BB /* DetailBankRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AEBB70D72A41194C000567BB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AEBB70D82A411963000567BB /* DetailBankProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AEBB70DA2A4130E1000567BB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AEBB70DB2A413103000567BB /* DetailBankInteractor.swift */,
+			);
+			name = Interactor;
+			path = PagaTodo/DetailBankView/Interactor;
+			sourceTree = SOURCE_ROOT;
+		};
 		AECBEFDC2A3519FC0055628D /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE371C882A3436EC0088DA63 /* LaunchScreen.storyboard in Resources */,
+				AEBB70D12A4118C5000567BB /* DetailBankViewController.xib in Resources */,
 				AE371C852A3436EC0088DA63 /* Assets.xcassets in Resources */,
 				AE371C832A3436EA0088DA63 /* Main.storyboard in Resources */,
 			);
@@ -317,16 +393,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE371CA62A34EE420088DA63 /* BankViewCell.swift in Sources */,
+				AEBB70D62A411911000567BB /* DetailBankRouter.swift in Sources */,
 				AE371CA22A343A640088DA63 /* HomeModule.swift in Sources */,
+				AEBB70DC2A413103000567BB /* DetailBankInteractor.swift in Sources */,
 				AE371C9F2A343A640088DA63 /* HomePresenter.swift in Sources */,
 				AE371C7C2A3436EA0088DA63 /* AppDelegate.swift in Sources */,
+				AEBB70D92A411963000567BB /* DetailBankProtocols.swift in Sources */,
 				AECBEFE02A352C050055628D /* Banks.swift in Sources */,
 				AE371CA42A343A640088DA63 /* HomeInteractor.swift in Sources */,
 				AE371CA32A343A640088DA63 /* HomeModel.swift in Sources */,
+				AEBB70D22A4118C5000567BB /* DetailBankViewController.swift in Sources */,
 				AE371CA92A34FC3E0088DA63 /* HomeProtocols.swift in Sources */,
 				AE371C7E2A3436EA0088DA63 /* SceneDelegate.swift in Sources */,
 				AE371CA02A343A640088DA63 /* HomeViewController.swift in Sources */,
 				AECBEFE22A352C6E0055628D /* SQLiteDataBase.swift in Sources */,
+				AEBB70D42A4118E9000567BB /* DetailBankPresenter.swift in Sources */,
 				AE371CA12A343A640088DA63 /* HomeRouter.swift in Sources */,
 				AECBEFE42A352E520055628D /* SQLiteCommands.swift in Sources */,
 			);

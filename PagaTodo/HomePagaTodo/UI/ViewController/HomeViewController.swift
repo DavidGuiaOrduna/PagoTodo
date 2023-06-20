@@ -76,6 +76,18 @@ extension HomeViewController: UITableViewDataSource {
         }
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if listBanks?.count != 0 && listBanks != nil {
+            let list = listBanks?[indexPath.row]
+            let detail = DetailBankModel(bankName: list?.bankName, url: list?.url)
+            presenter?.showDetail(detail: detail)
+        } else if bankInfo?.count != 0{
+            let bankInfo = bankInfo?[indexPath.row]
+            let detail = DetailBankModel(bankName: bankInfo?.bankName, url: bankInfo?.url)
+            presenter?.showDetail(detail: detail)
+        }
+    }
 }
 
 extension UIColor {
